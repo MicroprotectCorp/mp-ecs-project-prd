@@ -334,7 +334,6 @@ resource "aws_ecs_task_definition" "mp_ecs_service_taskdef" {
     Environment = var.mp_environment
     Owner       = "mp"
     Project     = var.application_name
-    Team        = var.application_name
   }
   task_role_arn = "arn:aws:iam::${local.account_id}:role/ecsTaskExecutionRole"
   runtime_platform {
