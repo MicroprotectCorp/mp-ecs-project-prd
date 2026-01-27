@@ -60,7 +60,7 @@ variable "alb_desync_mitigation_mode" {
 }
 
 variable "alb_idle_timeout" {
-  default = 180
+  default = 60
 }
 
 variable "alb_short_name" {
